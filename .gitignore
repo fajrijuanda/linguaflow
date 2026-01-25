@@ -1,0 +1,27 @@
+# General
+.DS_Store
+.idea
+*.log
+
+# Node (Web)
+node_modules
+.next
+out
+build
+.env
+.env.local
+
+# Python (API)
+__pycache__
+*.py[cod]
+.venv
+db.sqlite3
+.env
+
+# Flutter (Mobile)
+apps/mobile/.dart_tool
+apps/mobile/.flutter-plugins
+apps/mobile/.flutter-plugins-dependencies
+apps/mobile/build
+apps/mobile/android/.gradle
+apps/mobile/android/local.properties
