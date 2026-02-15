@@ -5,6 +5,7 @@ import '../../../core/theme/app_theme.dart';
 import '../../../main.dart'; // import provider
 import '../../../shared/glass_container.dart';
 import '../../learn/presentation/lesson_screen.dart';
+import 'register_screen.dart';
 
 class LoginScreen extends ConsumerStatefulWidget {
   const LoginScreen({super.key});
@@ -114,6 +115,15 @@ class _LoginScreenState extends ConsumerState<LoginScreen> {
                             },
                             child: const Text('Login'),
                           ),
+                        ),
+                        const SizedBox(height: 16),
+                        TextButton(
+                          onPressed: () {
+                            Navigator.of(context).push(
+                              MaterialPageRoute(builder: (_) => const RegisterScreen())
+                            );
+                          },
+                          child: const Text('Create Account'),
                         ),
                       ],
                     ),
